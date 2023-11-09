@@ -53,16 +53,20 @@ class AlertshowDialog extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     fontSize: 20)),
             onPressed: () {
-              if (operation == "Add") {
-                Tasks newTask = Tasks(TextboxCnt.text, false);
-                viewModel.AddNewTask(newTask);
-                print(operation);
-              } else {
-                viewModel.updateTaskTitle(Taskindex, TextboxCnt.text);
-              }
+              if(TextboxCnt.text.isNotEmpty) {
+                if (operation == "Add") {
+                  Tasks newTask = Tasks(TextboxCnt.text, false);
+                  viewModel.AddNewTask(newTask);
+                  print(operation);
+                } else {
+                  viewModel.updateTaskTitle(Taskindex, TextboxCnt.text);
+                }
+
 
               TextboxCnt.clear();
               Navigator.of(context).pop();
+              }
+
             },
           ),
           TextButton(
