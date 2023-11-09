@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:level_one_project/ViewModel.dart';
-import 'package:level_one_project/Views/%D9%90AlertView.dart';
+import 'package:level_one_project/Views/AlertView.dart';
 import 'package:level_one_project/Views/appbar.dart';
 import 'package:level_one_project/Views/info_sec.dart';
 import 'package:level_one_project/Views/taskListView.dart';
